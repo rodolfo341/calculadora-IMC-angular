@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: hsl(230, 53%, 8%);
+}
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.btn-color {
+    background-color: #ff3366;
+    border-color: #ff3366;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.btn-color:hover {
+    background-color: #fa1750;
+    border-color: #fa1750;
+}
