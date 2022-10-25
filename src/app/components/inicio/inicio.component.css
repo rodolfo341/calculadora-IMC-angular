@@ -5,3 +5,15 @@
     color: #fff;
 }
 
+.altura {
+    margin-top: -15px;
+}
+
+.cm {
+    font-weight: 400;
+    margin-left: -8px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #ff3366;
+}
