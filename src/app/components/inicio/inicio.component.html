@@ -5,13 +5,21 @@
 <!-- Masculino / Femenino -->
         <div class="row">
             <div class="col-lg-6">
-                <div class="fondo-item d-flex justify-content-center align-items-center flex-column">
+                <div class = "fondo-item d-flex justify-content-center align-items-center flex-column"
+                     style = "cursor: pointer;"
+                     (click) = "masculino()"
+                     [ngClass]="{ 'sexoDasactivado': sexo === 'femenino'}"
+                >
                     <i class="fa-solid fa-mars fs-3"></i>
                     <p>Masculino</p>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="fondo-item d-flex justify-content-center align-items-center flex-column">
+                <div class = "fondo-item d-flex justify-content-center align-items-center flex-column"
+                     style = "cursor: pointer;"
+                     (click) = "femenino()"
+                     [ngClass]="{ 'sexoDasactivado': sexo === 'masculino'}"
+                >
                     <i class="fa-solid fa-venus fs-3"></i>
                     <p>Femenino</p>
                 </div>
@@ -30,7 +38,6 @@
                             [value] = "altura" 
                             min = "120" 
                             max = "220"
-                            
                     >
                 </div>
             </div>
