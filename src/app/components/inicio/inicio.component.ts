@@ -31,8 +31,8 @@ export class InicioComponent implements OnInit {
     }
 
     calcularIMC(){
-        // vamos a calcular
-        this.router.navigate(['/resultado']);
+        const IMC = ( this.peso ) / ( Math.pow( this.altura/100,2 ) );
+        this.router.navigate(['/resultado', IMC.toFixed(1)]);
     }
    
 
